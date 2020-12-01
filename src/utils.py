@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,8 +10,8 @@ import seaborn as sns
 
 def read_data():
     """ Return a dataframe with 2 columns: movieId (actions) and rating (reward) """
-    data = pd.read_csv('data/ratings.csv', header=0,
-                       usecols=['movieId', 'rating'])
+    fpath = os.path.join(os.path.dirname(__file__), '..', 'data', 'ratings.csv')
+    data = pd.read_csv(fpath, header=0, usecols=['movieId', 'rating'])
     return data
 
 

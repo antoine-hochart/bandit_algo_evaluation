@@ -79,12 +79,15 @@ on 50000 events with updates after each event.
 
 ## Results
 
-To reproduce the results, you need to download
-the [MovieLens 25M Dataset](https://grouplens.org/datasets/movielens/25m/) and move the files
-into a directory called `data`.
-You also need to clone the files contained in the `src` directory and then run `main.py` script.
+To reproduce the results, after cloning the repo, you need to download
+the [MovieLens 25M Dataset](https://grouplens.org/datasets/movielens/25m/) and
+move the files into a directory called `data`.
+This `data` folder should at in the same location as the `src` folder (i.e., at the root of the repo).
+If you want to use another MovieLens dataset, it is also possible as long as it contains
+a `ratings.csv` file.
+Then you can run `main.py` script.
 The python packages necessary to run the script are *numpy*, *scipy*, *matplotlib*, *pandas*
-and *tqdm* (and *seaborn* for the bonus part).
+and *tqdm* (plus *seaborn* for the bonus part).
 
 Below are the average ratings and cumulative ratings for the replay evaluation and
 with the simulated environment, respectively.
